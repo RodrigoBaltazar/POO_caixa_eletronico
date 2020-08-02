@@ -1,6 +1,6 @@
 <?php
 
-class Conta
+abstract class Conta
 {
     public $agencia;
     public $codigo;
@@ -35,6 +35,9 @@ class Conta
             $this->saldo -= $quantia;
         }
     }
+
+    abstract function transferir($conta, $valor);
+
     function depositar($quantia)
     {
         if($quantia > 0)

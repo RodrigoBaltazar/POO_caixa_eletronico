@@ -28,6 +28,16 @@ class ContaPoupanca extends Conta
         //retirada permitida
         return true;
     }
+
+    //metodo transferir
+
+    function transferir($conta, $valor)
+    {
+        if($this->retirar($valor))
+        {
+            $conta->depositar($valor);
+        }
+    }
 }
 
 ?>
