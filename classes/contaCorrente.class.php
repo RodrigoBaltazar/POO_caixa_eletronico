@@ -1,14 +1,14 @@
 <?php
 
-class contaCorrente extends Conta
+class ContaCorrente extends Conta
 {
     var $limite;
 
     //metodo construtor sobreescrito com $limite
 
-    function __construct($agencia, $codigo, $dataDeCriacao, $titular, $senha, $saldo, $limite)
+    function __construct($agencia, $codigo, $dataDeCriacao, $titular, $senha, $saldo, $cancelada, $limite)
     {
-        parent::__construct($agencia, $codigo, $dataDeCriacao, $titular, $senha, $saldo);
+        parent::__construct($agencia, $codigo, $dataDeCriacao, $titular, $senha, $saldo, $cancelada, $limite);
         $this->limite = $limite;
     }
 

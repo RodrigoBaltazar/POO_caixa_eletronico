@@ -8,7 +8,7 @@ class ContaPoupanca extends Conta
     function __construct($agencia, $codigo, $dataDeCriacao, $titular, $senha, $saldo, $aniversario)
     {
         //chamada de metodo construtor da classe pai
-        parent::__construct($agencia, $codigo, $dataDeCriacao, $titular, $senha, $saldo);
+        parent::__construct($agencia, $codigo, $dataDeCriacao, $titular, $senha, $saldo, false);
         $this->aniversario = $aniversario;
     }
 
