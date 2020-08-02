@@ -1,8 +1,8 @@
 <?php
 
     //Carregando as classes
-    include_once 'classes/pessoa.php';
-    include_once 'classes/conta.php';
+    include_once 'classes/pessoa.class.php';
+    include_once 'classes/conta.class.php';
 
     //Criação do Objeto
 
